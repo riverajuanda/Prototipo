@@ -1,3 +1,16 @@
+/**
+ * Main index page for the SENA Food and Beverage Software
+ * 
+ * This HTML document represents the landing page of the application, featuring:
+ * - A hero section with a welcome message
+ * - Navigation to search recipes
+ * - Includes header, footer, and other common page components
+ * 
+ * @file index.php
+ * @author SENA Development Team
+ * @version 1.0
+ * @license Proprietary
+ */
 <!DOCTYPE html>
 <html lang="en">
 

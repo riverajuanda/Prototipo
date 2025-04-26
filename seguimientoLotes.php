@@ -1,3 +1,23 @@
+/**
+ * Seguimiento de Lotes (Batch Tracking) Page
+ * 
+ * This PHP file renders a web page for tracking and managing production batches.
+ * It includes a responsive table displaying batch details such as lot number, 
+ * production date, current status, location, and estimated delivery date.
+ * 
+ * Features:
+ * - View existing batch information
+ * - Edit batch details via modal dialog
+ * - Add new batches
+ * 
+ * Components:
+ * - Responsive table with batch tracking information
+ * - Modal form for editing/adding batch details
+ * - Includes header, footer, and necessary script/style dependencies
+ * 
+ * @package BatchTracking
+ * @version 1.0
+ */
 <!DOCTYPE html>
 <html lang="en">
 
@@ -53,7 +73,7 @@
                   <td>
                     <!-- Botón Editar -->
                     <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">Editar</button>
-                    
+
 
                   </td>
                 </tr>
@@ -144,7 +164,7 @@
     <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter" style="margin-bottom: 20px;">Agregar</button>
   </div>
 
-  
+
 
   <!-- footer -->
   <?php include('config/footer.php'); ?>

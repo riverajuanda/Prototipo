@@ -1,3 +1,19 @@
+/**
+* Estacionalidad de Costos Page
+*
+* This page displays a dynamic line chart showing the cost variations of different ingredients
+* over the course of a year. Users can select different ingredients (Carne de Res, Carne de Cerdo,
+* Arroz, Sal) to view their respective cost trends from January to December.
+*
+* Features:
+* - Interactive dropdown to select ingredient
+* - Chart dynamically updates based on selected ingredient
+* - Displays monthly cost data with color-coded lines
+*
+* @uses Chart.js for rendering the line graph
+* @uses select2 for enhanced dropdown functionality
+*/
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +21,6 @@
   <?php include('config/head.php'); ?>
   <script src="assets/js/main2.js"></script>
 </head>
-
 <body class="index-page">
   <!-- header -->
   <?php include('config/header.php'); ?>
@@ -42,7 +57,7 @@
   </main>
 
   <!-- Script modificado -->
-     <?php include('config/script.php'); ?>
+  <?php include('config/script.php'); ?>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const ctx = document.getElementById('costChart');
@@ -72,8 +87,9 @@
       const chart = new Chart(ctx, {
         type: 'line',
         data: {
-          labels: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", 
-                  "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
+          labels: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+            "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
+          ],
           datasets: [{
             label: productData.res.label,
             data: productData.res.data,
@@ -88,7 +104,11 @@
           responsive: true,
           maintainAspectRatio: false,
           scales: {
-            x: { grid: { display: false } },
+            x: {
+              grid: {
+                display: false
+              }
+            },
             y: {
               ticks: {
                 callback: function(value) {
@@ -116,7 +136,8 @@
     });
   </script>
 
-<?php include('config/footer.php'); ?>
+  <?php include('config/footer.php'); ?>
   <!-- Resto del código -->
 </body>
+
 </html>

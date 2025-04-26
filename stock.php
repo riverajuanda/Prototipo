@@ -1,3 +1,12 @@
+/**
+ * Stock Inventory Page
+ * 
+ * Displays a table of available food items and their current stock quantities.
+ * Includes a search filter and pagination for the inventory list.
+ * 
+ * @page Stock
+ * @category Inventory Management
+ */
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,7 +31,7 @@
           </div>
           <div class="table-responsive p-3">
             <div id="dataTable_filter" class="dataTables_filter"><label>Buscar alimento:<input type="search"
-                    class="form-control form-control-sm" placeholder="" aria-controls="dataTable"></label></div>
+                  class="form-control form-control-sm" placeholder="" aria-controls="dataTable"></label></div>
             <table class="table align-items-center table-flush" id="dataTable">
               <thead class="thead-light">
                 <tr>

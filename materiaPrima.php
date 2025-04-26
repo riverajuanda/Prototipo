@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
+/**
+ * Includes the head configuration file for the materiaPrima.php page.
+ * This typically includes meta tags, CSS links, and other HTML head elements.
+ * 
+ * @file config/head.php Contains the HTML head configuration
+ */
 <head>
   <?php include('config/head.php'); ?>
 </head>

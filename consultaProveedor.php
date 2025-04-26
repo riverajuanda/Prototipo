@@ -1,3 +1,18 @@
+/**
+* Consulta Proveedor Page
+*
+* This PHP file renders a search page for finding providers/suppliers.
+* It includes a search input field with a search icon and a button
+* to navigate to the full list of providers.
+*
+* Key features:
+* - Responsive design using Bootstrap 5
+* - Styled search container with custom CSS
+* - Includes standard page components like header, footer, and preloader
+*
+* @package ProviderManagement
+* @subpackage SearchInterface
+*/
 <!DOCTYPE html>
 <html lang="en">
 

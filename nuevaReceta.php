@@ -1,3 +1,23 @@
+/**
+ * Nueva Receta Page
+ * 
+ * This PHP file represents a web page for creating a new recipe in the system.
+ * It provides a form with fields for:
+ * - Recipe name input
+ * - Recipe category selection
+ * - Recipe status selection
+ * - Recipe procedure input
+ * - Recipe image upload
+ * 
+ * The page includes:
+ * - Select2 dropdown functionality for enhanced form interactions
+ * - Buttons to save or cancel recipe creation
+ * - Redirects to 'buscarRecetas.php' after save/cancel actions
+ * 
+ * @package RecipeManagement
+ * @subpackage RecipeCreation
+ * @version 1.0
+ */
 <!DOCTYPE html>
 <html lang="en">
 

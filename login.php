@@ -1,4 +1,17 @@
 <!DOCTYPE html>
+/**
+ * Login page for the web application
+ * 
+ * This page provides a user interface for authentication, including:
+ * - Email and password input fields
+ * - "Remember me" checkbox
+ * - Login button
+ * - Password recovery modal
+ * - Registration link
+ * 
+ * The page uses Bootstrap for styling and includes responsive design
+ * for various screen sizes.
+ */
 <html lang="es">
 
 <head>

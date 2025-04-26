@@ -1,5 +1,10 @@
+/**
+ * Declares the HTML5 document type for the current HTML document.
+ * This declaration helps browsers render the page in standards mode and ensures proper document interpretation.
+ */
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <?php include('config/head.php'); ?>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -65,7 +70,7 @@
             </div>
           </div>
         </div>
-        
+
         <div class="col-lg-4">
           <div class="card mb-4">
             <div class="card-header py-3">
@@ -81,10 +86,10 @@
   </main>
 
   <!-- Scripts -->
-<script src="assets/tables/jquery-3.6.0.min.js"></script>
-<script src="assets/tables/jquery.dataTables.min.js"></script>
-<script src="assets/tables/dataTables.bootstrap4.min.js"></script>
-<script src="assets/tables/chart.js"></script>
+  <script src="assets/tables/jquery-3.6.0.min.js"></script>
+  <script src="assets/tables/jquery.dataTables.min.js"></script>
+  <script src="assets/tables/dataTables.bootstrap4.min.js"></script>
+  <script src="assets/tables/chart.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       // Inicializar DataTable
@@ -122,8 +127,9 @@
       const chart = new Chart(ctx, {
         type: 'line',
         data: {
-          labels: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", 
-                 "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
+          labels: ["Ene", "Feb", "Mar", "Abr", "May", "Jun",
+            "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"
+          ],
           datasets: [{
             label: 'Seleccione un ingrediente',
             data: [],
@@ -136,7 +142,11 @@
           responsive: true,
           maintainAspectRatio: false,
           scales: {
-            x: { grid: { display: false } },
+            x: {
+              grid: {
+                display: false
+              }
+            },
             y: {
               ticks: {
                 callback: function(value) {
@@ -152,7 +162,7 @@
       $('#costTable tbody').on('click', 'tr', function() {
         const ingrediente = $(this).data('ingrediente');
         const selectedData = productData[ingrediente];
-        
+
         chart.data.datasets[0] = {
           label: selectedData.label,
           data: selectedData.data,
@@ -162,15 +172,16 @@
           pointRadius: 4,
           pointBackgroundColor: selectedData.color
         };
-        
+
         chart.update();
       });
     });
   </script>
-  
+
 
   <?php include('config/footer.php'); ?>
 
   <!-- Resto del código -->
 </body>
+
 </html>

@@ -1,3 +1,18 @@
+/**
+ * Lista Maestra de Ingredientes - Página de inventario de ingredientes
+ * 
+ * Esta página muestra una tabla detallada de los ingredientes disponibles en el inventario,
+ * incluyendo información como nombre, unidad de medida, precio unitario, proveedor y stock actual.
+ * 
+ * Características:
+ * - Tabla interactiva con DataTables
+ * - Opciones de búsqueda y filtrado
+ * - Responsive design
+ * 
+ * @package Inventario
+ * @subpackage Ingredientes
+ * @version 1.0
+ */
 <!DOCTYPE html>
 <html lang="es">
 
