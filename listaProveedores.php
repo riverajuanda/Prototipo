@@ -12,6 +12,14 @@
  * - Provider Code
  * - Provider Name
  * - Characteristic
+/**
+ * This script is responsible for managing the list of suppliers (Proveedores).
+ * 
+ * Features:
+ * - Displays a list of suppliers.
+ * - Includes supplier status information.
+ * 
+ */
  * - Status
  * - Edit Action
  * 
