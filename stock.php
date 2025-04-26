@@ -21,9 +21,9 @@
             <h6 class="m-0 font-weight-bold text-primary text-success">STOCK DISPONIBLE</h6>
           </div>
           <div class="table-responsive p-3">
-            <table class="table align-items-center table-flush" id="dataTable">
-              <div id="dataTable_filter" class="dataTables_filter"><label>Buscar alimento:<input type="search"
+            <div id="dataTable_filter" class="dataTables_filter"><label>Buscar alimento:<input type="search"
                     class="form-control form-control-sm" placeholder="" aria-controls="dataTable"></label></div>
+            <table class="table align-items-center table-flush" id="dataTable">
               <thead class="thead-light">
                 <tr>
                   <th>ALIMENTO</th>
