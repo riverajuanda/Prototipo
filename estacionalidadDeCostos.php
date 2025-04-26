@@ -1,4 +1,39 @@
 /**
+ * Estacionalidad de Costos Page
+ *
+ * This PHP page renders a dynamic web interface for visualizing the cost variations
+ * of different ingredients over the course of a year. It includes an interactive line chart
+ * and a dropdown menu for selecting specific ingredients to display their respective cost trends.
+ *
+ * Features:
+ * - Dropdown menu for selecting ingredients (Carne de Res, Carne de Cerdo, Arroz, Sal).
+ * - Dynamic line chart powered by Chart.js that updates based on the selected ingredient.
+ * - Monthly cost data visualization with color-coded lines for each ingredient.
+ * - Responsive design for optimal viewing on various devices.
+ *
+ * Dependencies:
+ * - Chart.js: Used for rendering the interactive line chart.
+ * - select2: Enhances the dropdown menu functionality for better user experience.
+ *
+ * JavaScript Functionality:
+ * - Initializes a Chart.js line chart with default data for "Carne de Res".
+ * - Updates the chart dynamically when a new ingredient is selected from the dropdown.
+ * - Formats the y-axis values to display as currency.
+ *
+ * PHP Includes:
+ * - config/head.php: Contains the HTML head elements and linked assets.
+ * - config/header.php: Includes the header section of the page.
+ * - config/script.php: Includes additional JavaScript files.
+ * - config/footer.php: Includes the footer section of the page.
+ *
+ * Usage:
+ * - Users can select an ingredient from the dropdown menu to view its cost trends.
+ * - The chart updates automatically to reflect the selected ingredient's data.
+ *
+ * Author:
+ * - [Your Name or Team Name]
+ * - [Date or Version Information]
+ */
 * Estacionalidad de Costos Page
 *
 * This page displays a dynamic line chart showing the cost variations of different ingredients
