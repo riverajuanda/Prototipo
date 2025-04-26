@@ -12,6 +12,13 @@
  * The page uses Bootstrap for styling and includes responsive design
  * for various screen sizes.
  */
+/**
+ * This file represents the login page of the application.
+ * 
+ * 
+ * The HTML document is set to use the Spanish language (lang="es").
+ * Additional functionality and structure for the login page should be implemented here.
+ */
 <html lang="es">
 
 <head>

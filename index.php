@@ -1,56 +1,33 @@
 /**
  * Main index page for the SENA Food and Beverage Software
  * 
- * This HTML document represents the landing page of the application, featuring:
- * - A hero section with a welcome message
- * - Navigation to search recipes
- * - Includes header, footer, and other common page components
+ * This file serves as the landing page of the application. It includes:
+ * - A hero section with a welcome message and a call-to-action button.
+ * - Navigation to search for recipes.
+ * - Integration of reusable components such as header, footer, and scripts.
+ * - Preloader and scroll-to-top functionality.
+ * 
+ * Features:
+ * - Responsive design with AOS (Animate On Scroll) animations.
+ * - Links to external and internal resources for styling and functionality.
+ * 
+ * Included Components:
+ * - `config/head.php`: Contains meta tags, stylesheets, and other head elements.
+ * - `config/header.php`: Contains the header section of the page.
+ * - `config/footer.php`: Contains the footer section of the page.
+ * - `config/Scrolltop.php`: Adds scroll-to-top functionality.
+ * - `config/script.php`: Includes vendor JavaScript files.
+ * 
+ * External Resources:
+ * - Cloudflare Insights for analytics.
+ * - Main JavaScript file for custom functionality.
  * 
  * @file index.php
- * @author SENA Development Team
+ * @package SENA Food and Beverage Software
  * @version 1.0
+ * @author SENA Development Team
  * @license Proprietary
  */
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <?php include('config/head.php'); ?>
-</head>
-
-<body class="index-page">
-  <!-- header -->
-  <?php include('config/header.php'); ?>
-
-
-  <!-- Main -->
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="" class="hero section ">
-
-      <img src="admin/img/FONDO.png" alt="" data-aos="fade-in">
-
-      <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <h2>Bienvenido al software de alimentos y bebidas del SENA</h2>
-            <p>Acá podrás costear y consultar las recetas que necesitas</p>
-            <a href="buscarRecetas.php" class="btn-get-started">Empecemos!!</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-  </main>
-
-  <!-- footer -->
-  <?php include('config/footer.php'); ?>
-
-  <!-- Scroll Top -->
-  <?php include('config/Scrolltop.php'); ?>
-
   <!-- Preloader -->
   <div id="preloader"></div>
 
