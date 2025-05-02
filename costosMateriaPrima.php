@@ -1,4 +1,4 @@
-/**
+<!--/**
  * costosMateriaPrima.php
  *
  * This script generates a web page that displays a table of raw material costs
@@ -36,7 +36,7 @@
 /**
  * Declares the HTML5 document type for the current HTML document.
  * This declaration helps browsers render the page in standards mode and ensures proper document interpretation.
- */
+ */-->
 <!DOCTYPE html>
 <html lang="es">
 

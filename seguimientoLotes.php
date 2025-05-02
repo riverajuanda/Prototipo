@@ -1,4 +1,4 @@
-/**
+<!--/**
  * Seguimiento de Lotes (Batch Tracking) Page
  * 
  * This PHP file renders a web page for tracking and managing production batches.
@@ -17,7 +17,7 @@
  * 
  * @package BatchTracking
  * @version 1.0
- */
+ */-->
 <!DOCTYPE html>
 <html lang="en">
 

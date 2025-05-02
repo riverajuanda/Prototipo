@@ -1,4 +1,4 @@
-/**
+<!--/**
  * Register page for user account creation
  * 
  * This HTML document provides a registration form for new users to create an account.
@@ -14,7 +14,7 @@
  * @package UserAuthentication
  * @subpackage Registration
  * @version 1.0.0
- */
+ */-->
 <!DOCTYPE html>
 <html lang="es">
 

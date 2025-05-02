@@ -1,4 +1,4 @@
-/**
+<!-- 
  * Main index page for the SENA Food and Beverage Software
  * 
  * This file serves as the landing page of the application. It includes:
@@ -26,8 +26,7 @@
  * @package SENA Food and Beverage Software
  * @version 1.0
  * @author SENA Development Team
- * @license Proprietary
- */
+ * @license Proprietary -->
   <!-- Preloader -->
   <div id="preloader"></div>
 

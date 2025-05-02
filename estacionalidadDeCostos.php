@@ -1,4 +1,4 @@
-/**
+<!--/**
  * Estacionalidad de Costos Page
  *
  * This PHP page renders a dynamic web interface for visualizing the cost variations
@@ -48,7 +48,7 @@
 * @uses Chart.js for rendering the line graph
 * @uses select2 for enhanced dropdown functionality
 */
-
+-->
 <!DOCTYPE html>
 <html lang="en">
 

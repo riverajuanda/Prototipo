@@ -5,7 +5,7 @@
   <?php include('config/head.php'); ?>
 </head>
 
-/**
+<!--/**
  * Renders the Providers List page with a table of providers
  * 
  * This page displays a list of providers with their details including:
@@ -25,7 +25,7 @@
  * 
  * Includes a logout modal and integrates with the site's standard layout
  * by including header, footer, and script configurations
- */
+ */-->
 <body class="index-page">
   <!-- header -->
   <?php include('config/header.php'); ?>

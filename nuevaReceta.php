@@ -1,4 +1,4 @@
-/**
+<!--/**
  * Nueva Receta Page
  * 
  * This PHP file represents a web page for creating a new recipe in the system.
@@ -17,7 +17,7 @@
  * @package RecipeManagement
  * @subpackage RecipeCreation
  * @version 1.0
- */
+ */-->
 <!DOCTYPE html>
 <html lang="en">
 

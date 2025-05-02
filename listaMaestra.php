@@ -1,4 +1,4 @@
-/**
+<!-- 
  * Lista Maestra de Ingredientes - Página de inventario de ingredientes
  * 
  * Esta página muestra una tabla detallada de los ingredientes disponibles en el inventario,
@@ -12,7 +12,7 @@
  * @package Inventario
  * @subpackage Ingredientes
  * @version 1.0
- */
+-->
 <!DOCTYPE html>
 <html lang="es">
 

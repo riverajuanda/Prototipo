@@ -1,4 +1,4 @@
-/**
+<!--/**
 * Consulta Proveedor Page
 *
 * This PHP file renders a search page for finding providers/suppliers.
@@ -13,6 +13,7 @@
 * @package ProviderManagement
 * @subpackage SearchInterface
 */
+-->
 <!DOCTYPE html>
 <html lang="en">
 

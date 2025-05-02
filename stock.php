@@ -1,4 +1,5 @@
-/**
+<!---->
+<!--
  * Stock Inventory Page
  * 
  * Displays a table of available food items and their current stock quantities.
@@ -6,7 +7,7 @@
  * 
  * @page Stock
  * @category Inventory Management
- */
+ */-->
 <!DOCTYPE html>
 <html lang="en">
 

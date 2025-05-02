@@ -1,26 +1,23 @@
 <!DOCTYPE html>
-/**
- * Login page for the web application
- * 
- * This page provides a user interface for authentication, including:
- * - Email and password input fields
- * - "Remember me" checkbox
- * - Login button
- * - Password recovery modal
- * - Registration link
- * 
- * The page uses Bootstrap for styling and includes responsive design
- * for various screen sizes.
- */
-/**
- * This file represents the login page of the application.
- * 
- * 
- * The HTML document is set to use the Spanish language (lang="es").
- * Additional functionality and structure for the login page should be implemented here.
- */
-<html lang="es">
+<!--
+* Login page for the web application
 
+* This page provides a user interface for authentication, including:
+* - Email and password input fields
+* - "Remember me" checkbox
+* - Login button
+* - Password recovery modal
+* - Registration link
+*
+* The page uses Bootstrap for styling and includes responsive design
+* for various screen sizes.
+
+* This file represents the login page of the application.
+*
+* The HTML document is set to use the Spanish language (lang="es").
+* Additional functionality and structure for the login page should be implemented here.
+-->
+<html lang="es">
 <head>
   <?php include('config/head.php'); ?>
 </head>
@@ -40,8 +37,8 @@
                   </div>
                   <form class="user px-4">
                     <div class="form-group mb-3">
-                      <input type="email" class="form-control" id="exampleInputEmail" 
-                             aria-describedby="emailHelp" placeholder="Ingrese correo electronico">
+                      <input type="email" class="form-control" id="exampleInputEmail"
+                        aria-describedby="emailHelp" placeholder="Ingrese correo electronico">
                     </div>
                     <div class="form-group mb-3">
                       <input type="password" class="form-control" id="exampleInputPassword" placeholder="Contraseña">
@@ -63,7 +60,7 @@
                         Crea una cuenta
                       </a>
                       <button type="button" class="btn btn-success mx-2 px-3" data-toggle="modal"
-                              data-target="#exampleModalScrollable">
+                        data-target="#exampleModalScrollable">
                         Olvidaste tu contraseña?
                       </button>
                     </div>
@@ -118,4 +115,4 @@
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <script src="js/ruang-admin.min.js"></script>
 </body>
-</html>i
+</html>
