@@ -1,26 +1,9 @@
-<!--/**
- * Register page for user account creation
- * 
- * This HTML document provides a registration form for new users to create an account.
- * The form includes fields for:
- * - First Name
- * - Last Name
- * - Email
- * - Password
- * - Password Confirmation
- * 
- * Includes links to login page for existing users and submits registration data.
- * 
- * @package UserAuthentication
- * @subpackage Registration
- * @version 1.0.0
- */-->
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
 
-  <?php include('config/head.php'); ?>
+<?php include('config/head.php'); ?>
 
 </head>
 

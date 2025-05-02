@@ -1,15 +1,3 @@
-<!--
-* Buscar Recetas Page
-*
-* This PHP file renders the recipe search page for the culinary website.
-* It includes a search input, recipe search button, and displays recent recipe cards
-* with detailed preparation instructions for dishes like Arroz con Huevo, Ajiaco,
-* and Espaguetis a la Boloñesa.
-*
-* @package RecipeWebsite
-* @subpackage Pages
-* @version 1.0
-*/-->
 <!DOCTYPE html>
 <html lang="en">
 

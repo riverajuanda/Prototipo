@@ -1,45 +1,5 @@
-<!--/**
- * costosMateriaPrima.php
- *
- * This script generates a web page that displays a table of raw material costs
- * and a dynamic chart showing cost seasonality. It includes the following features:
- *
- * 1. **HTML Structure**:
- *    - Declares the HTML5 document type and sets the language to Spanish.
- *    - Includes external resources such as Chart.js and DataTables for enhanced functionality.
- *
- * 2. **Header and Footer**:
- *    - Includes reusable header and footer components from external PHP files.
- *
- * 3. **Main Content**:
- *    - Displays a table of raw material costs with columns for ingredient, unit, average price, supplier, and annual variation.
- *    - Provides a chart for visualizing the seasonal cost trends of selected ingredients.
- *
- * 4. **JavaScript Functionality**:
- *    - Initializes a DataTable for the raw material cost table with Spanish localization.
- *    - Configures a Chart.js line chart to display cost trends for selected ingredients.
- *    - Implements interactivity between the table and the chart, allowing users to click on a table row to update the chart with the corresponding ingredient's data.
- *
- * 5. **Data Sources**:
- *    - Hardcoded data for ingredients, including their labels, colors, and monthly cost trends.
- *
- * 6. **Styling and Responsiveness**:
- *    - Uses Bootstrap for responsive design and styling.
- *    - Ensures the chart is responsive and maintains its aspect ratio.
- *
- * 7. **Dependencies**:
- *    - jQuery and DataTables for table functionality.
- *    - Chart.js for rendering the line chart.
- *
- * This script is designed to provide an interactive and user-friendly interface for analyzing raw material costs and their seasonal variations.
- */
-/**
- * Declares the HTML5 document type for the current HTML document.
- * This declaration helps browsers render the page in standards mode and ensures proper document interpretation.
- */-->
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <?php include('config/head.php'); ?>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -105,7 +65,7 @@
             </div>
           </div>
         </div>
-
+        
         <div class="col-lg-4">
           <div class="card mb-4">
             <div class="card-header py-3">
@@ -121,10 +81,10 @@
   </main>
 
   <!-- Scripts -->
-  <script src="assets/tables/jquery-3.6.0.min.js"></script>
-  <script src="assets/tables/jquery.dataTables.min.js"></script>
-  <script src="assets/tables/dataTables.bootstrap4.min.js"></script>
-  <script src="assets/tables/chart.js"></script>
+<script src="assets/tables/jquery-3.6.0.min.js"></script>
+<script src="assets/tables/jquery.dataTables.min.js"></script>
+<script src="assets/tables/dataTables.bootstrap4.min.js"></script>
+<script src="assets/tables/chart.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       // Inicializar DataTable
@@ -162,9 +122,8 @@
       const chart = new Chart(ctx, {
         type: 'line',
         data: {
-          labels: ["Ene", "Feb", "Mar", "Abr", "May", "Jun",
-            "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"
-          ],
+          labels: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", 
+                 "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
           datasets: [{
             label: 'Seleccione un ingrediente',
             data: [],
@@ -177,11 +136,7 @@
           responsive: true,
           maintainAspectRatio: false,
           scales: {
-            x: {
-              grid: {
-                display: false
-              }
-            },
+            x: { grid: { display: false } },
             y: {
               ticks: {
                 callback: function(value) {
@@ -197,7 +152,7 @@
       $('#costTable tbody').on('click', 'tr', function() {
         const ingrediente = $(this).data('ingrediente');
         const selectedData = productData[ingrediente];
-
+        
         chart.data.datasets[0] = {
           label: selectedData.label,
           data: selectedData.data,
@@ -207,16 +162,15 @@
           pointRadius: 4,
           pointBackgroundColor: selectedData.color
         };
-
+        
         chart.update();
       });
     });
   </script>
-
+  
 
   <?php include('config/footer.php'); ?>
 
   <!-- Resto del código -->
 </body>
-
 </html>
